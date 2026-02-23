@@ -17,3 +17,14 @@ make
 sudo make install
 ```
 
+## Build and run the Read example
+
+```bash
+cd Read/Source
+mkdir build
+cd build
+cmake ..
+make
+sudo ./Read
+```
+

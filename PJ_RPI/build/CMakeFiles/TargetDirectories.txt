@@ -1,0 +1,7 @@
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/PJ_RPI.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/edit_cache.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/rebuild_cache.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/list_install_components.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/install.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/install/local.dir
+/home/pi/embedded/rpi-io-logger/PJ_RPI/build/CMakeFiles/install/strip.dir

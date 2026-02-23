@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/Read.dir/main.c.o -o Read  -lPJ_RPI 

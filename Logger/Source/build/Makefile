@@ -129,6 +129,30 @@ Logger/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/build
 .PHONY : Logger/fast
 
+dblogger.o: dblogger.c.o
+.PHONY : dblogger.o
+
+# target to build an object file
+dblogger.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/dblogger.c.o
+.PHONY : dblogger.c.o
+
+dblogger.i: dblogger.c.i
+.PHONY : dblogger.i
+
+# target to preprocess a source file
+dblogger.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/dblogger.c.i
+.PHONY : dblogger.c.i
+
+dblogger.s: dblogger.c.s
+.PHONY : dblogger.s
+
+# target to generate assembly for a file
+dblogger.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/dblogger.c.s
+.PHONY : dblogger.c.s
+
 gpio.o: gpio.c.o
 .PHONY : gpio.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Logger"
+	@echo "... dblogger.o"
+	@echo "... dblogger.i"
+	@echo "... dblogger.s"
 	@echo "... gpio.o"
 	@echo "... gpio.i"
 	@echo "... gpio.s"

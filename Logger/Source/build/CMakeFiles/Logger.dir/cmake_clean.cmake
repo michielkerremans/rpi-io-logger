@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Logger.dir/dblogger.c.o"
+  "CMakeFiles/Logger.dir/dblogger.c.o.d"
   "CMakeFiles/Logger.dir/gpio.c.o"
   "CMakeFiles/Logger.dir/gpio.c.o.d"
   "CMakeFiles/Logger.dir/main.c.o"

@@ -28,3 +28,11 @@ make
 sudo ./Read
 ```
 
+## Database access
+
+```sql
+CREATE USER '[USER]'@'localhost' IDENTIFIED BY '[PASSWORD]';
+GRANT ALL PRIVILEGES ON rpi_io_logger.* TO '[USER]'@'localhost';
+FLUSH PRIVILEGES;
+```
+

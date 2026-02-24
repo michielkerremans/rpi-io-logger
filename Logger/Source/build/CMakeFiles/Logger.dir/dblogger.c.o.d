@@ -1,6 +1,7 @@
-CMakeFiles/Logger.dir/main.c.o: \
- /home/pi/embedded/rpi-io-logger/Logger/Source/main.c \
- /usr/include/stdc-predef.h /usr/local/include/PJ_RPI.h \
+CMakeFiles/Logger.dir/dblogger.c.o: \
+ /home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.c \
+ /usr/include/stdc-predef.h \
+ /home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.h \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -24,11 +25,7 @@ CMakeFiles/Logger.dir/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/include/string.h \
- /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/stdlib.h \
- /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
@@ -53,32 +50,11 @@ CMakeFiles/Logger.dir/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
- /usr/include/dirent.h /usr/include/aarch64-linux-gnu/bits/dirent.h \
- /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
- /usr/include/aarch64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min.h \
- /usr/include/aarch64-linux-gnu/bits/dirent_ext.h /usr/include/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/aarch64-linux-gnu/bits/stat.h \
- /usr/include/aarch64-linux-gnu/bits/struct_stat.h /usr/include/assert.h \
- /usr/include/sched.h /usr/include/aarch64-linux-gnu/bits/sched.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
- /usr/include/aarch64-linux-gnu/sys/mman.h \
- /usr/include/aarch64-linux-gnu/bits/mman.h \
- /usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h \
- /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
- /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
- /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
- /usr/include/aarch64-linux-gnu/sys/stat.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /home/pi/embedded/rpi-io-logger/Logger/Source/gpio.h \
- /home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.h
+ /usr/include/string.h \
+ /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/strings.h /usr/include/mariadb/mysql.h \
+ /usr/include/mariadb/mariadb_com.h \
+ /usr/include/mariadb/mariadb_version.h /usr/include/mariadb/ma_list.h \
+ /usr/include/mariadb/mariadb_ctype.h /usr/include/ctype.h \
+ /usr/include/mariadb/mariadb_stmt.h

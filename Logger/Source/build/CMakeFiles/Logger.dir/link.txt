@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/Logger.dir/main.c.o CMakeFiles/Logger.dir/gpio.c.o -o Logger  -lPJ_RPI 

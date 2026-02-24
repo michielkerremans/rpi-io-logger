@@ -1,0 +1,3 @@
+/home/pi/embedded/rpi-io-logger/Logger/Source/build/CMakeFiles/Logger.dir
+/home/pi/embedded/rpi-io-logger/Logger/Source/build/CMakeFiles/edit_cache.dir
+/home/pi/embedded/rpi-io-logger/Logger/Source/build/CMakeFiles/rebuild_cache.dir

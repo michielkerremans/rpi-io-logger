@@ -24,31 +24,22 @@ int main(int argc, char *argv[])
 	const char *user = argv[1];
 	const char *pass = argv[2];
 
+	// Initialize the database (replace with your actual credentials)
+	if (!DB_Init("localhost", user, pass, "rpi_io_logger"))
+	{
+		printf("Database initialization failed!\n");
+		return 1;
+	}
+
 	while (1)
 	{
-		gpio_17_val = GPIO_Log(17, gpio_17_val);
+		if (GPIO_Log(17, &gpio_17_val))
+			DB_GPIOLog("gpio_log", 17, gpio_17_val);
 		sleep(3);
-
-		// Initialize the database (replace with your actual credentials)
-		if (!DB_Init("localhost", user, pass, "rpi_io_logger"))
-		{
-			printf("Database initialization failed!\n");
-			return 1;
-		}
-
-		// Log a test value (e.g., pin 17, value 1)
-		if (DB_GPIOLog("gpio_log", 17, 1))
-		{
-			printf("Logged GPIO 17 value 1 to database.\n");
-		}
-		else
-		{
-			printf("Failed to log GPIO value.\n");
-		}
-
-		// Close the database connection
-		DB_Close();
 	}
+
+	// Close the database connection
+	DB_Close();
 
 	return 0;
 }

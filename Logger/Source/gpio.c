@@ -13,13 +13,17 @@ void GPIO_Init(int pin, int mode)
 int GPIO_Read(int pin)
 {
   INP_GPIO(pin);
-  return GPIO_READ(pin);
+  return (GPIO_READ(pin)) >> pin; // the parentheses here are NOT optional!
 }
 
-int GPIO_Log(int pin, int prev)
+int GPIO_Log(int pin, int *value)
 {
-  int value = GPIO_Read(pin);
-  if (value != prev)
-    printf("GPIO %d is %s\n", pin, value ? "HIGH" : "LOW");
-  return value;
+  int new_value = GPIO_Read(pin);
+  if (new_value != *value)
+  {
+    printf("GPIO %d is %s\n", pin, new_value ? "HIGH" : "LOW");
+    *value = new_value;
+    return 1;
+  }
+  return 0;
 }

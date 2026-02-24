@@ -66,7 +66,11 @@ CMakeFiles/Logger.dir/dblogger.c.o: /home/pi/embedded/rpi-io-logger/Logger/Sourc
   /usr/include/mariadb/ma_list.h \
   /usr/include/mariadb/mariadb_ctype.h \
   /usr/include/ctype.h \
-  /usr/include/mariadb/mariadb_stmt.h
+  /usr/include/mariadb/mariadb_stmt.h \
+  /usr/include/time.h \
+  /usr/include/aarch64-linux-gnu/bits/time.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h
 
 CMakeFiles/Logger.dir/gpio.c.o: /home/pi/embedded/rpi-io-logger/Logger/Source/gpio.c \
   /usr/include/stdc-predef.h \
@@ -290,12 +294,6 @@ CMakeFiles/Logger.dir/main.c.o: /home/pi/embedded/rpi-io-logger/Logger/Source/ma
 
 /usr/include/fcntl.h:
 
-/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/aarch64-linux-gnu/bits/confname.h:
-
-/usr/include/aarch64-linux-gnu/bits/dirent_ext.h:
-
 /usr/include/aarch64-linux-gnu/bits/pthread_stack_min.h:
 
 /usr/include/aarch64-linux-gnu/bits/sched.h:
@@ -305,6 +303,18 @@ CMakeFiles/Logger.dir/main.c.o: /home/pi/embedded/rpi-io-logger/Logger/Source/ma
 /usr/include/linux/limits.h:
 
 /usr/include/dirent.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/aarch64-linux-gnu/bits/confname.h:
+
+/usr/include/aarch64-linux-gnu/bits/dirent_ext.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/time.h:
 
 /usr/include/mariadb/mariadb_stmt.h:
 
@@ -363,6 +373,8 @@ CMakeFiles/Logger.dir/main.c.o: /home/pi/embedded/rpi-io-logger/Logger/Source/ma
 /usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_stat.h:
+
+/usr/include/aarch64-linux-gnu/bits/time.h:
 
 /usr/include/aarch64-linux-gnu/bits/time64.h:
 

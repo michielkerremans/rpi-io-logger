@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	while (1)
 	{
 		if (GPIO_Log(17, &gpio_17_val))
-			DB_GPIOLog("gpio_log", 17, gpio_17_val);
+			DB_Insert("gpio_log", 17, gpio_17_val);
 		sleep(3);
 	}
 

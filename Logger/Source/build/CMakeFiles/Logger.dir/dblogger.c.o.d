@@ -57,4 +57,7 @@ CMakeFiles/Logger.dir/dblogger.c.o: \
  /usr/include/mariadb/mariadb_com.h \
  /usr/include/mariadb/mariadb_version.h /usr/include/mariadb/ma_list.h \
  /usr/include/mariadb/mariadb_ctype.h /usr/include/ctype.h \
- /usr/include/mariadb/mariadb_stmt.h
+ /usr/include/mariadb/mariadb_stmt.h /usr/include/time.h \
+ /usr/include/aarch64-linux-gnu/bits/time.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h

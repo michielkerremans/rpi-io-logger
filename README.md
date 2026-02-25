@@ -3,6 +3,9 @@
 ## Testing
 
 ```bash
+pinctrl set 26 ip
+pinctrl set 27 ip
+pinctrl set 19 op dh; pinctrl get 19,26
 pinctrl set 17 op dh; pinctrl get 17,27
 ```
 

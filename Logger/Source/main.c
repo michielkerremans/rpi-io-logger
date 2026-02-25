@@ -3,7 +3,8 @@
 #include "gpio.h"
 #include "dblogger.h"
 
-int gpio_17_val = -1;
+int gpio_26_val = -1;
+int gpio_27_val = -1;
 
 int main(int argc, char *argv[])
 {
@@ -13,7 +14,8 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
-	GPIO_Init(17, 0); // Set GPIO 17 as input
+	GPIO_Init(26, 0); // Set GPIO 26 as input
+	GPIO_Init(27, 0); // Set GPIO 27 as input
 
 	if (argc < 3)
 	{
@@ -33,9 +35,11 @@ int main(int argc, char *argv[])
 
 	while (1)
 	{
-		if (GPIO_Log(17, &gpio_17_val))
-			DB_Insert("gpio_log", 17, gpio_17_val);
-		sleep(3);
+		if (GPIO_Log(26, &gpio_26_val))
+			DB_Insert("gpio_log", 26, gpio_26_val);
+		if (GPIO_Log(27, &gpio_27_val))
+			DB_Insert("gpio_log", 27, gpio_27_val);
+		sleep(1);
 	}
 
 	// Close the database connection

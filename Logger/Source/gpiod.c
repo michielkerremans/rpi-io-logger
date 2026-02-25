@@ -1,6 +1,13 @@
 #include "gpiod.h"
 #include <gpiod.h>
 #include <stdio.h>
+#include "dblogger.h"
+
+#define ERR_GPIOD_CHIP_OPEN 3001
+#define ERR_GPIOD_GET_LINE 3002
+#define ERR_GPIOD_REQ_OUTPUT 3003
+#define ERR_GPIOD_REQ_INPUT 3004
+#define ERR_GPIOD_GET_VALUE 3005
 
 #define CHIP_NAME "gpiochip0"
 #define MAX_PINS 64
@@ -15,26 +22,38 @@ void GPIOD_Init(int pin, int mode)
 
   if (!chip)
   {
-    fprintf(stderr, "Failed to open GPIO chip: %s\n", CHIP_NAME);
+    char msg[64];
+    snprintf(msg, sizeof(msg), "Failed to open GPIO chip: %s", CHIP_NAME);
+    DB_Log(ERR_GPIOD_CHIP_OPEN, msg);
     return;
   }
 
   lines[pin] = gpiod_chip_get_line(chip, pin); // get the line for the specified pin
   if (!lines[pin])
   {
-    fprintf(stderr, "Failed to get GPIO line: %d\n", pin);
+    char msg[64];
+    snprintf(msg, sizeof(msg), "Failed to get GPIO line: %d", pin);
+    DB_Log(ERR_GPIOD_GET_LINE, msg);
     return;
   }
 
   if (mode == 1)
   {
     if (gpiod_line_request_output(lines[pin], "gpiod", 0) < 0) // "gpiod" is the consumer label for this process
-      fprintf(stderr, "Failed to request line %d as output\n", pin);
+    {
+      char msg[64];
+      snprintf(msg, sizeof(msg), "Failed to request line %d as output", pin);
+      DB_Log(ERR_GPIOD_REQ_OUTPUT, msg);
+    }
   }
   else
   {
     if (gpiod_line_request_input(lines[pin], "gpiod") < 0) // "gpiod" is the consumer label for this process
-      fprintf(stderr, "Failed to request line %d as input\n", pin);
+    {
+      char msg[64];
+      snprintf(msg, sizeof(msg), "Failed to request line %d as input", pin);
+      DB_Log(ERR_GPIOD_REQ_INPUT, msg);
+    }
   }
 }
 
@@ -43,6 +62,12 @@ int GPIOD_Read(int pin)
   if (!lines[pin])
     return -1;
   int value = gpiod_line_get_value(lines[pin]); // read the value of the line
+  if (value < 0)
+  {
+    char msg[64];
+    snprintf(msg, sizeof(msg), "Failed to read GPIO line: %d", pin);
+    DB_Log(ERR_GPIOD_GET_VALUE, msg);
+  }
   return value;
 }
 

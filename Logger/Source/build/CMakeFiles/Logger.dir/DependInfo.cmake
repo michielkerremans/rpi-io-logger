@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.c" "CMakeFiles/Logger.dir/dblogger.c.o" "gcc" "CMakeFiles/Logger.dir/dblogger.c.o.d"
   "/home/pi/embedded/rpi-io-logger/Logger/Source/gpio.c" "CMakeFiles/Logger.dir/gpio.c.o" "gcc" "CMakeFiles/Logger.dir/gpio.c.o.d"
+  "/home/pi/embedded/rpi-io-logger/Logger/Source/gpiod.c" "CMakeFiles/Logger.dir/gpiod.c.o" "gcc" "CMakeFiles/Logger.dir/gpiod.c.o.d"
   "/home/pi/embedded/rpi-io-logger/Logger/Source/main.c" "CMakeFiles/Logger.dir/main.c.o" "gcc" "CMakeFiles/Logger.dir/main.c.o.d"
   )
 

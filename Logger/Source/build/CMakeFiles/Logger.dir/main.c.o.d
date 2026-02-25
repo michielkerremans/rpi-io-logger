@@ -81,4 +81,5 @@ CMakeFiles/Logger.dir/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /home/pi/embedded/rpi-io-logger/Logger/Source/gpio.h \
+ /home/pi/embedded/rpi-io-logger/Logger/Source/gpiod.h \
  /home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.h

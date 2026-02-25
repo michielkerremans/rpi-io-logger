@@ -177,6 +177,30 @@ gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/gpio.c.s
 .PHONY : gpio.c.s
 
+gpiod.o: gpiod.c.o
+.PHONY : gpiod.o
+
+# target to build an object file
+gpiod.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/gpiod.c.o
+.PHONY : gpiod.c.o
+
+gpiod.i: gpiod.c.i
+.PHONY : gpiod.i
+
+# target to preprocess a source file
+gpiod.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/gpiod.c.i
+.PHONY : gpiod.c.i
+
+gpiod.s: gpiod.c.s
+.PHONY : gpiod.s
+
+# target to generate assembly for a file
+gpiod.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Logger.dir/build.make CMakeFiles/Logger.dir/gpiod.c.s
+.PHONY : gpiod.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... gpio.o"
 	@echo "... gpio.i"
 	@echo "... gpio.s"
+	@echo "... gpiod.o"
+	@echo "... gpiod.i"
+	@echo "... gpiod.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

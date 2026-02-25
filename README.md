@@ -60,3 +60,12 @@ Stop and disable the service (at boot):
 sudo systemctl stop logger.service
 sudo systemctl disable logger.service
 ```
+
+## GPIOD Library
+
+```bash
+sudo apt update
+sudo apt install -y libgpiod-dev gpiod
+gpiodetect # list GPIO chips
+gpioinfo # list GPIO lines and their status
+```

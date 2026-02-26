@@ -55,4 +55,5 @@ CMakeFiles/Logger.dir/gpiod.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /home/pi/embedded/rpi-io-logger/Logger/Source/dblogger.h
